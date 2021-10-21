@@ -1,0 +1,11 @@
+@hostname = localhost
+@port = 5000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+POST http://{{host}}/api/v1/transactions HTTP/1.1
+Content-Type: {{contentType}}
+
+# GET http://{{host}}/api/v1/transactions
+
+# DELETE  http://{{host}}/api/v1/transactions/617011001f6f486b90689af4
